@@ -21,7 +21,7 @@ export default function Layout() {
       <main className={styles["app-main"]}>
         <SignedOut>
           {/* It's recommended to avoid using this component in favor of useNavigate */}
-          <Navigate to="/sign-in" replace />
+          <Navigate to="/sign/in" replace />
         </SignedOut>
 
         <SignedIn>

@@ -6,8 +6,8 @@ export default function AuthPage() {
     <>
       <div className={styles["auth-container"]}>
         <SignedOut>
-          <SignIn routing="path" path="/sign-in" />
-          <SignUp routing="path" path="/sign-up" />
+          <SignIn routing="path" path="/sign/in" />
+          <SignUp routing="path" path="/sign/up" />
         </SignedOut>
 
         <SignedIn>

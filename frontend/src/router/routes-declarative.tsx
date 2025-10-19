@@ -7,8 +7,8 @@ import HistoryPage from "../pages/history-page";
 export default function RoutesDeclarative() {
   return (
     <Routes>
-      <Route path="/sign-in/*" Component={AuthPage} />
-      <Route path="/sign-up/*" Component={AuthPage} />
+      <Route path="/sign/in/*" Component={AuthPage} />
+      <Route path="/sign/up/*" Component={AuthPage} />
 
       <Route Component={Layout}>
         <Route path="/" Component={Homepage} />
