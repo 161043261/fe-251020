@@ -1,3 +1,6 @@
 import { createBrowserRouter } from "react-router";
+import routesData from "./routes-data";
 
-export const router = createBrowserRouter([]);
+const router = createBrowserRouter(routesData);
+
+export default router;
