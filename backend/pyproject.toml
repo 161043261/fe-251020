@@ -1,5 +1,12 @@
 [project]
-dependencies = []
+dependencies = [
+  "clerk-backend-api>=3.3.1",
+  "fastapi>=0.119.0",
+  "openai>=2.5.0",
+  "python-dotenv>=1.1.1",
+  "sqlalchemy>=2.0.44",
+  "uvicorn>=0.38.0",
+]
 description = "Add your description here"
 name = "langchain"
 readme = "README.md"
