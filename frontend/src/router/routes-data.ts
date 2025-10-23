@@ -10,11 +10,11 @@ const routesData: RouteObject[] = [
     path: "/sign",
     children: [
       {
-        path: "in/*", // path: "/sign/in/*"
+        path: "/sign/in/*", // path: "in/*"
         Component: AuthPage,
       },
       {
-        path: "up/*", // path: "/sign/up/*"
+        path: "/sign/up/*", // path: "up/*"
         Component: AuthPage,
       },
     ],
