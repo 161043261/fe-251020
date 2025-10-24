@@ -1,4 +1,9 @@
 // MCQ: Multiple Choice Question
-export default function Mcq() {
+interface IProps {
+  problem: string;
+}
+
+export default function Mcq(props: IProps) {
+  console.log(props);
   return <>Multiple Choice Question</>;
 }

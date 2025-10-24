@@ -1,0 +1,53 @@
+.generator-container {
+  background: var(--color-light-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.quota-container {
+  background: var(--color-light-bg2);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-light-text);
+
+  p {
+    color: var(--color-light-text)
+  }
+}
+
+.level-container {
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-light-text);
+  }
+}
+
+.generate-button {
+  background: var(--color-theme-react);
+  color: var(--color-light-text);
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.5s;
+
+  &:hover {
+    background: var(--color-theme-react2);
+  }
+
+  &:disabled {
+    background: var(--color-theme-vue3);
+    cursor: not-allowed;
+  }
+}
+
+.error-message {
+  color: #ff0000;
+  margin: 1rem 0;
+  background: #ffb6c1;
+  border-radius: 0.5rem;
+}
