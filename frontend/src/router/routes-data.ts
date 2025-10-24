@@ -1,8 +1,8 @@
 import type { RouteObject } from "react-router";
 import Layout from "../layout";
-import AuthPage from "../pages/auth-page";
-import HistoryPage from "../pages/history-page";
-import Homepage from "../pages/homepage";
+import Auth from "../pages/auth";
+import History from "../pages/history";
+import Home from "../pages/home";
 
 const routesData: RouteObject[] = [
   {
@@ -10,12 +10,12 @@ const routesData: RouteObject[] = [
     path: "/sign",
     children: [
       {
-        path: "/sign/in/*", // path: "in/*"
-        Component: AuthPage,
+        path: "in/*", // path: "/sign/in/*"
+        Component: Auth,
       },
       {
-        path: "/sign/up/*", // path: "up/*"
-        Component: AuthPage,
+        path: "up/*", // path: "/sign/up/*"
+        Component: Auth,
       },
     ],
   },
@@ -28,11 +28,11 @@ const routesData: RouteObject[] = [
         // 索引路由: index: true, 即默认二级路由
         // index: true,
         path: "/",
-        Component: Homepage,
+        Component: Home,
       },
       {
         path: "/history",
-        Component: HistoryPage,
+        Component: History,
       },
     ],
   },

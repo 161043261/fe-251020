@@ -8,10 +8,10 @@ interface IQuota {
   remain: number;
 }
 
-export default function Homepage() {
+export default function Index() {
   const [problem, setProblem] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [errorMessage, setErrorMessage] = useState<string>("");
+  const [errorMessage, setErrorMessage] = useState<string>("Hello, World!");
   const [level, setLevel] = useState<TLevel>("easy");
   const [quota, setQuota] = useState<IQuota>();
 
@@ -24,7 +24,7 @@ export default function Homepage() {
   };
 
   return (
-    <div className={styles["generator-container"]}>
+    <div className={styles["home-container"]}>
       <h2>Coding Problem Generator</h2>
       <div className={styles["quota-container"]}>
         <p>Quota remain: {quota?.remain ?? 0}</p>

@@ -7,7 +7,7 @@
 
 .app-header {
   width: 100vw;
-  background: #fff;
+  background: var(--color-light-bg);
   padding: 1rem;
   border-bottom: 1px solid var(--color-light-text);
 }

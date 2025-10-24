@@ -1,8 +1,8 @@
 .auth-container {
-  margin: 1rem auto;
-  background: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-light-bg);
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,5 +12,5 @@
 .redirect-msg {
   text-align: center;
   color: var(--color-light-text);
-  margin-top: 1rem;
+  font-size: 2rem;
 }

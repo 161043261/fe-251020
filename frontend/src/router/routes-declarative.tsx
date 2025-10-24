@@ -1,18 +1,22 @@
 import { Route, Routes } from "react-router";
-import AuthPage from "../pages/auth-page";
+import Auth from "../pages/auth";
 import Layout from "../layout";
-import Homepage from "../pages/homepage";
-import HistoryPage from "../pages/history-page";
+import Home from "../pages/home";
+import History from "../pages/history";
 
 export default function RoutesDeclarative() {
   return (
     <Routes>
-      <Route path="/sign/in/*" Component={AuthPage} />
-      <Route path="/sign/up/*" Component={AuthPage} />
+      <Route path="/sign">
+        {/* <Route path="/sign/in/*" Component={Auth} /> */}
+        <Route path="in/*" Component={Auth} />
+        {/* <Route path="/sign/up/*" Component={Auth} /> */}
+        <Route path="up/*" Component={Auth} />
+      </Route>
 
       <Route Component={Layout}>
-        <Route path="/" Component={Homepage} />
-        <Route path="/history" Component={HistoryPage} />
+        <Route path="/" Component={Home} />
+        <Route path="/history" Component={History} />
       </Route>
     </Routes>
   );
