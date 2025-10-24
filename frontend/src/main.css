@@ -31,12 +31,12 @@
   --color-theme-react2: #61dafbaa;
 
   color: var(--color-light-text);
-  background-color: var(--color-light-bg);
+  background: var(--color-light-bg);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--color-light-text);
-    background-color: var(--color-light-bg);
+    background: var(--color-light-bg);
   }
 }

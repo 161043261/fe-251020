@@ -1,7 +1,7 @@
 import { SignedIn, SignedOut, SignIn, SignUp } from "@clerk/clerk-react";
 import styles from "./index.module.scss";
 
-export default function Index() {
+export default function Auth() {
   return (
     <>
       <div className={styles["auth-container"]}>

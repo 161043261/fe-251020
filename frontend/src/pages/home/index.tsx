@@ -1,15 +1,21 @@
 import { useState, type ChangeEvent } from "react";
-import styles from "./index.module.css";
-import Mcq from "../../components/mcq";
-
-type TLevel = "easy" | "medium" | "hard";
+import styles from "./index.module.scss";
+import Problem from "../../components/problem";
+import type { IProblemDetails, TLevel } from "../../types";
 
 interface IQuota {
   remain: number;
 }
 
-export default function Index() {
-  const [problem, setProblem] = useState<string>("");
+export default function Home() {
+  const [problemDetails, setProblemDetails] = useState<IProblemDetails>({
+    description: "Default Problem",
+    answerIdx: -1,
+    level: "easy",
+    options: ["A: Answer 1", "B: Answer 2", "C: Answer 3", "D: Answer 4"],
+    solution: "Default Solution",
+  });
+
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("Hello, World!");
   const [level, setLevel] = useState<TLevel>("easy");
@@ -54,13 +60,13 @@ export default function Index() {
         {isLoading ? "Generating..." : "Generate a coding problem"}
       </button>
 
+      <Problem details={problemDetails} />
+
       {errorMessage && (
         <div className={styles["error-message"]}>
           <p>{errorMessage}</p>
         </div>
       )}
-
-      {problem && <Mcq problem={problem} />}
     </div>
   );
 }

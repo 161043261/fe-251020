@@ -18,6 +18,8 @@
 }
 
 .level-container {
+  margin: 1rem 0;
+
   label {
     display: block;
     margin: 0.5rem;
@@ -34,6 +36,8 @@
     color: var(--color-light-text);
     cursor: pointer;
     font-size: 1rem;
+    /* Clear default style */
+    outline: none;
   }
 
   select:disabled {
