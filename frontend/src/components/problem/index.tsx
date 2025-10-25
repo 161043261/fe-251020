@@ -27,12 +27,12 @@ export default function Problem(props: IProps) {
 
   const getOptionClassnames = (optionIdx: number) => {
     if (selectedIdx !== optionIdx) {
-      return "";
+      return styles["option-item"];
     }
     if (optionIdx === answerIdx) {
-      return "option-correct";
+      return `${styles["option-item"]} ${styles["option-correct"]}`;
     } else {
-      return "option-wrong";
+      return `${styles["option-item"]} ${styles["option-wrong"]}`;
     }
   };
 
@@ -46,7 +46,7 @@ export default function Problem(props: IProps) {
         {options.map((option, idx) => (
           <div
             key={idx}
-            className={`${styles["option-item"]} ${styles[getOptionClassnames(idx)]}`}
+            className={getOptionClassnames(idx)}
             onClick={() => {
               handleSelectOption(idx);
             }}

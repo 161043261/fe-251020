@@ -5,7 +5,7 @@ import Problem from "../../components/problem";
 
 export default function History() {
   const [problemDetailList, setProblemDetailList] = useState<IProblemDetails[]>(
-    []
+    [],
   );
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("Hello, World!");
@@ -20,7 +20,7 @@ export default function History() {
   }, []);
 
   if (isLoading) {
-    return <div className={styles["loading-container"]}></div>;
+    return <div className={styles["loading-container"]}>Loading...</div>;
   }
 
   if (errorMessage) {
