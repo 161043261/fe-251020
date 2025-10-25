@@ -1,14 +1,23 @@
 .problem-container {
-  // margin-top: 1rem;
+  margin-top: 1rem;
   padding: 1rem;
   background: var(--color-theme-bg);
   border-radius: 0.5rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .problem-description {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  color: var(--color-theme-text);
 }
 
 .options-container {
+  // margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .option-item {

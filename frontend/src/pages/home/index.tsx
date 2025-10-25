@@ -9,16 +9,17 @@ interface IQuota {
 
 export default function Home() {
   const [problemDetails, setProblemDetails] = useState<IProblemDetails>({
+    id: 0,
     description: "Default Problem",
     answerIdx: -1,
-    level: "easy",
+    level: "Easy",
     options: ["A: Answer 1", "B: Answer 2", "C: Answer 3", "D: Answer 4"],
     solution: "Default Solution",
   });
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("Hello, World!");
-  const [level, setLevel] = useState<TLevel>("easy");
+  const [level, setLevel] = useState<TLevel>("Easy");
   const [quota, setQuota] = useState<IQuota>();
 
   const fetchQuota = async () => {};
