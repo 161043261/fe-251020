@@ -6,13 +6,13 @@ services:
     container_name: mysql
     hostname: mysql
     ports:
-      - 3306:3306
+      - "3306:3306"
     privileged: true
     restart: on-failure
     environment:
       MYSQL_DATABASE: db0
       MYSQL_USER: user
       MYSQL_PASSWORD: pass
-      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+      MYSQL_RANDOM_ROOT_PASSWORD: yes
       TZ: Asia/Shanghai
   # docker-compose down mysql -v
