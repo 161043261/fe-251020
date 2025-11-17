@@ -52,7 +52,7 @@ perf: ## Performance optimization
 init: ## Initial commit
 	rm -rf ./.git
 	git init
-	git remote add origin git@github.com:161043261/fe-251020.git
+	git remote add origin git@github.com:161043261/fe-251023.git
 	git add -A
 	git commit -m "Initial commit"
 	git push -f origin main --set-upstream
